@@ -12,7 +12,7 @@ const post = (parent, args) => {
     return link;
 };
 
-const update = (parent, args) => {
+const updateNews = (parent, args) => {
     const index = links.findIndex(linkObj => linkObj.id === args.id);
     links[index] = {
         ...links[index],
@@ -22,7 +22,15 @@ const update = (parent, args) => {
     return links[index];
 };
 
+const deleteNews = (parent, args) => {
+    const index = links.findIndex(linkObj => linkObj.id === args.id);
+    const deletedLink = links[index];
+    links.splice(index, 1);
+    return deletedLink;
+};
+
 module.exports = {
     post,
-    update,
+    updateNews,
+    deleteNews,
 };
