@@ -8,9 +8,9 @@ type Query {
 type Mutation {
     post(url: String!, description: String!): Link!
     # Update a link.
-    update(id: ID!, url: String!, description: String!): Link!
+    updateNews(id: ID!, url: String!, description: String!): Link!
     # Delete a link.
-    # delete(id: ID!): Link!
+    deleteNews(id: ID!): Link!
 }
 
 type Link {
