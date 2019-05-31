@@ -9,6 +9,7 @@ const post = (parent, args) => {
         description: args.description, 
     };
     links.push(link);
+    
     return link;
 };
 
