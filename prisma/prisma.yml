@@ -1,4 +1,5 @@
-#endpoint: ''
+# IMPORTANT: The endpoint needs to be prisma 
+# rather than localhost in order to make it work.
 endpoint: http://prisma:4466
 datamodel: datamodel.prisma
 generate:
