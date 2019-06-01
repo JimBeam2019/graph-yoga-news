@@ -1,6 +1,7 @@
-# IMPORTANT: The endpoint needs to be prisma 
-# rather than localhost in order to make it work.
-endpoint: http://prisma:4466
+# IMPORTANT: The endpoint at /generated/prisma-client/index.js
+# needs to be prisma rather than localhost 
+# in order to make it work.
+endpoint: http://localhost:4466
 datamodel: datamodel.prisma
 generate:
   - generator: javascript-client
